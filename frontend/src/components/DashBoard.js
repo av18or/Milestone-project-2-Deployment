@@ -100,8 +100,8 @@ export default function Dashboard() {
       <h1 className="page-header">Overview</h1>
 
       <div className="bug-cards">
-        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
-          <Card.Header>Total Bugs</Card.Header>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px", border: "1px solid" }}>
+          <Card.Header style={{fontSize: "20px"}}>Total Bugs</Card.Header>
           <Card.Body>
             <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
               {showBugs("total")}
@@ -120,10 +120,10 @@ export default function Dashboard() {
           </Card.Footer>
         </Card>
 
-        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
-          <Card.Header>Total High Priority Bugs</Card.Header>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px", border: "1px solid" }}>
+          <Card.Header style={{fontSize: "20px"}}>Total High Priority Bugs</Card.Header>
           <Card.Body>
-            <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
+            <Card.Text style={{ fontSize: "96px", textAlign: "center", color: "red"}}>
               {showBugs("high")}
             </Card.Text>
           </Card.Body>
@@ -140,10 +140,10 @@ export default function Dashboard() {
           </Card.Footer>
         </Card>
 
-        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
-          <Card.Header>Total Medium Priority Bugs</Card.Header>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px", border: "1px solid" }}>
+          <Card.Header style={{fontSize: "20px"}}>Total Medium Priority Bugs</Card.Header>
           <Card.Body>
-            <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
+            <Card.Text style={{ fontSize: "96px", textAlign: "center", color: "orange" }}>
               {showBugs("medium")}
             </Card.Text>
           </Card.Body>
@@ -160,10 +160,10 @@ export default function Dashboard() {
           </Card.Footer>
         </Card>
 
-        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
-          <Card.Header>Total Low Priority Bugs</Card.Header>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px", border: "1px solid" }}>
+          <Card.Header style={{fontSize: "20px"}}>Total Low Priority Bugs</Card.Header>
           <Card.Body>
-            <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
+            <Card.Text style={{ fontSize: "96px", textAlign: "center", color: "green" }}>
               {showBugs("low")}
             </Card.Text>
           </Card.Body>
