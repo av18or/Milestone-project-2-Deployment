@@ -78,9 +78,9 @@ export default function EditBug() {
             onChange={(e) => setbugPriority(e.target.value)}
           >
             <option>{bugPriority}</option>
-            <option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
+            <option value="high">high</option>
+            <option value="medium">medium</option>
+            <option value="low">low</option>
           </Form.Select>
         </Form.Group>
 
@@ -93,23 +93,6 @@ export default function EditBug() {
             onChange={(e) => setbugDetails(e.target.value)}
           />
         </Form.Group>
-
-
-        {/* causing a bug with loading edit page */}
-        {/* <Form.Group className="mb-3">
-          <Form.Label>User Assigned</Form.Label>
-          <Form.Select
-            aria-label="Default select example"
-            onChange={(e) => setuserAssigned(e.target.value)}
-
-          >
-          {Users.map((user)=>{
-            return (
-              <option value={user._id} key={user._id}>{user.name}</option>
-            )
-          })}
-          </Form.Select>
-        </Form.Group> */}
 
         <Button variant="primary" type="submit">
           Save Changes

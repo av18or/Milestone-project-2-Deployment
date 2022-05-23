@@ -32,7 +32,7 @@ router.get("/", async (req, res) => {
   try {
     const Bugs = await Bug.find();
     console.log(Bugs);
-    res.redirect(Bugs);
+    res.send(Bugs);
   } catch (e) {
     console.log(e.message);
     res.send(e);

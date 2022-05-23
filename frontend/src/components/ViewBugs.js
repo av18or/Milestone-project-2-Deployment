@@ -10,7 +10,7 @@ export default function ViewBugs() {
     useEffect(() => {
     const fetchBugs = async () => {
         try{
-             const data = await fetch("/bugs");
+          const data = await fetch("/bugs");
       const json = await data.json();
       setBugs(json)
         } catch(err){console.log(err)}

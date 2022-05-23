@@ -100,7 +100,7 @@ export default function Dashboard() {
       <h1 className="page-header">Overview</h1>
 
       <div className="bug-cards">
-        <Card style={{ width: "40rem", height: "40rem", margin: "10px" }}>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
           <Card.Header>Total Bugs</Card.Header>
           <Card.Body>
             <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
@@ -120,7 +120,7 @@ export default function Dashboard() {
           </Card.Footer>
         </Card>
 
-        <Card style={{ width: "40rem", height: "40rem", margin: "10px" }}>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
           <Card.Header>Total High Priority Bugs</Card.Header>
           <Card.Body>
             <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
@@ -140,7 +140,7 @@ export default function Dashboard() {
           </Card.Footer>
         </Card>
 
-        <Card style={{ width: "40rem", height: "40rem", margin: "10px" }}>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
           <Card.Header>Total Medium Priority Bugs</Card.Header>
           <Card.Body>
             <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
@@ -160,7 +160,7 @@ export default function Dashboard() {
           </Card.Footer>
         </Card>
 
-        <Card style={{ width: "40rem", height: "40rem", margin: "10px" }}>
+        <Card style={{ width: "20rem", height: "20rem", margin: "10px" }}>
           <Card.Header>Total Low Priority Bugs</Card.Header>
           <Card.Body>
             <Card.Text style={{ fontSize: "96px", textAlign: "center" }}>
